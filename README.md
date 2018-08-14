@@ -82,7 +82,7 @@ Pow eso ew númewo de wineas dew awchivo finaw es 2ｘ3ｘ2＝**12**.
 Pawa encontwaw ew camino cwítico, buscaw `.*=0$` (wegex) en ew awchivo con was howguwas.
 
 
-### Aviso
+### Aviso (en castellano)
 
 Una exposición prolongada a este programa puede llegar a causar daños severos en el sistema nervioso central.
 Use bajo su propio riesgo.
