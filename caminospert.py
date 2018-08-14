@@ -11,16 +11,17 @@ IN_3aENTREGA="3.txt" # Caminos de wa tewcewa entwega
 OUT_DURACION="duracion.txt" # Duwación de wos caminos
 OUT_HOLGURA="holgura.txt" # Howgura de wos caminos
 """ Pwogwamita (°◡°♡) """
-duracion = open(OUT_DURACION,"w") # Abwimos ew awchivo
+SEPARADOR="-" # Sepawadow de was taweas
+duracion = open(OUT_DURACION,"w", encoding="utf8") # Abwimos ew awchivo
 """ Anwade wa duwacion de was twes entweguitas ( ` ω ´ ) """
 def durac(l1, l2, l3):
 	duracion.write(
-	  l1.split("=")[0]
-	+ "-"
-	+ l2.split("=")[0]
-	+ "-"
-	+ l3.split("=")[0]
-	+ "="
+	  l1.split("=")[0].strip()
+	+ SEPARADOR
+	+ l2.split("=")[0].strip()
+	+ SEPARADOR
+	+ l3.split("=")[0].strip()
+	+ " = "
 	+ str(
 		  int(l1.split("=")[1])
 		+ int(l2.split("=")[1])
@@ -29,6 +30,8 @@ def durac(l1, l2, l3):
 	+ "\n"
 	)
 """ Pwoducto cawtesiano de was twes entwegas (⌒_⌒;) """
+duracion.write("Duración\n\n")
+titulo = duracion.tell()
 with open(IN_1aENTREGA,"r") as one:
 	with open(IN_2aENTREGA,"r") as two:
 		with open(IN_3aENTREGA,"r") as three:
@@ -40,24 +43,21 @@ with open(IN_1aENTREGA,"r") as one:
 					for l3 in three:
 						durac(l1, l2, l3)
 duracion.close() # Cewwamos ew awchivo
-holgura = open(OUT_HOLGURA,"w") # Abwimos ew awchivo
 """ Buscamos ew máximo y cawcuwamos la howguwa """
+holgura = open(OUT_HOLGURA,"w", encoding="utf8") # Abwimos ew awchivo
+holgura.write("Holgura\n\n")
 with open(OUT_DURACION,"r") as duracion:
 	max = 0
-	duracion.seek(0)
+	duracion.seek(titulo)
 	for l in duracion:
 		d = int(l.split("=")[1])
 		if d > max:
 			max = d
-	duracion.seek(0)
+	duracion.seek(titulo)
 	for l in duracion:
 		holgura.write(
-		  l.split("=")[0]
-		+ " "
-		+ str(max)
-		+ "-"
-		+ str(int(l.split("=")[1]))
-		+ "="
+		  l.split("=")[0].strip()
+		+ " = "
 		+ str(max-int(l.split("=")[1]))
 		+ "\n"
 		)
