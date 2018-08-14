@@ -1,10 +1,10 @@
 # PERTcalcPRY2018
 
-Pwogwamita kakkoii para cawcuwaw wos caminos dew PEWT.
+Pwogwamita kakkoii para cawcuwaw wos **caminos dew PEWT**.
 
 ### Uso
 
-Edite en caminospewt.py las vawiabwes:
+Edite en *caminospewt.py* las vawiabwes:
 
     IN_1aENTWEGA: Awchivo con wos caminos de wa pwimewa entwega
     IN_2aENTWEGA: Awchivo con wos caminos de wa segunda entwega
@@ -15,11 +15,12 @@ Edite en caminospewt.py las vawiabwes:
     
 Y ejecute el scwipt (dobwe cwick o `$ python caminospewt.py` en el directorio).
 
-A pawtiw de wos twes awchivos de entwada se genewawán wos dos awchivos de sawida. Si wos twes awchivos de entwada no existen el pwogwamita explota. ｡ﾟ･ (>﹏<) ･ﾟ｡
+A pawtiw de wos *twes awchivos de entwada* se genewawán wos *dos awchivos de sawida*.
+Si wos twes awchivos de entwada no existen el pwogwamita explota. ｡ﾟ･ (>﹏<) ･ﾟ｡
 
 ### Wequewimientos
 
-Funciona en Python 3.6.3. Suewte...
+Funciona en **Python 3.6.3**. Suewte...
 
 ### Ejempwo
 
@@ -72,3 +73,10 @@ howguwa.txt
     BBB01001-DDD02001-DDD02002-GGG03001 27-27=0
     BBB01001-EEE02001-FFF03001-FFF03002 27-22=5
     BBB01001-EEE02001-GGG03001 27-23=4
+
+Notese que se wealiza un pwoducto cawtesiano de was wineas de wos awrchivos y se suma wa duwacion de wos segmentos individuawes.
+Pow eso ew númewo de wineas dew awchivo finaw es 2ｘ3ｘ2＝**12**.
+
+### Camino cwítico
+
+Pawa encontwaw ew camino cwítico, buscaw `.*=0$` (wegex) en ew awchivo con was howguwas.
